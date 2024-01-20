@@ -38,4 +38,6 @@ if st.button('Moderate'):
     serialized_output = serialize(output)
     json_output = json.dumps(serialized_output, indent=2, ensure_ascii=False)
     st.json(json_output)
-
+    
+#edited from here
+st.data_editor(data, num_rows="dynamic")
