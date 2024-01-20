@@ -39,10 +39,3 @@ if st.button('Moderate'):
     json_output = json.dumps(serialized_output, indent=2, ensure_ascii=False)
     st.json(json_output)
 
-import pandas as pd
-import streamlit as st
-
-def load_data():
-    return pd.read_excel('sales.xlsx', header=0)
-data = load_data()
-st.dataframe(data)
