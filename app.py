@@ -28,7 +28,7 @@ api_key = st.secrets["openai_secret"]
 client = OpenAI(api_key=api_key)
 
 # Streamlit UI components
-st.title('''Natural Language Processing Detection New Application for Sunday''')
+st.title('''NLP Detection New Application for Sunday''')
 
 user_input = st.text_area("Enter text to moderate")
 
